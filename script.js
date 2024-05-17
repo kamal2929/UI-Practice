@@ -18,3 +18,6 @@ document.getElementById('body').onclick=function()
         overlay.style.display = 'none';
     }
 }
+document.getElementById('newContainer').onclick = function(event) {
+    event.stopPropagation();
+};
