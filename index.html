@@ -3,20 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./index.css"/>
+    <link rel="stylesheet" href="./index.css" />
     <title>Pocket Notes</title>
   </head>
-  <body>
+  <body id="body">
     <div class="header">
-      <div class="header-text">
-        Pocket Notes
-      </div>
+      <div class="header-text">Pocket Notes</div>
       <div class="header-button">
         <button id="deleteAll" class="deleteAll">DELETE ALL</button>
         <button id="new" class="new">NEW</button>
       </div>
     </div>
-    <div class="new-container" id="newContainer"></div>
+    <div class="new-container" id="newContainer">
+      <div class="new-note">
+        <div class="new-note-text">NEW NOTE</div>
+        <div class="newnote-close">X</div>
+      </div>
+      <div class="notesinput">
+        <textarea id="notes-tile" placeholder="Notes Title"></textarea>
+        <textarea id="notes-image" placeholder="Add Image URL"></textarea>
+        <textarea
+          id="notes-Content"
+          class="notes-Content"
+          placeholder="Add content here"
+        ></textarea>
+      </div>
+    </div>
+    <div class="overlay" id="overlay"></div> 
     <script src="./script.js"></script>
   </body>
 </html>
