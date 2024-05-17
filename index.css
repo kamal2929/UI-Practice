@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: #000000;
+}
+.header
+{
+    height: 6.25rem;
+    width: 100%;
+    background-color: #031D2E;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;    
+}
+.header-text{
+    font-size: 1.5rem;
+    color: #fff;
+}
+.header-button
+{
+    display: flex;
+    gap: 1rem;
+}
+.deleteAll
+{
+    background-color: #A80000;
+    height: 45px;
+    width: 185px;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 45px;
+    border: none;
+}
+.new
+{
+    background-color: #B354B7;
+    height: 45px;
+    width: 130px;
+    border: none;
+    font-size: 1rem;
+    border-radius: 45px;
+    color:#fff;
+}
+.new-container
+{
+    top:0rem;
+    width: 670px;
+    height: 100vh;
+    position:absolute;
+    background-color: #fff;
+    right: -670px;
+    transition: right 0.5s ease; 
+}
